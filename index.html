@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Junior Developer Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Java Junior Developer Quiz</h1>
+      <p>Test your Java knowledge with 10 random questions!</p>
+    </header>
+
+    <div id="intro" class="section">
+      <input type="text" id="nameInput" placeholder="Enter your name" required>
+      <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div id="quiz" class="section hidden">
+      <div id="progress">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">10</span></div>
+      <div id="questionContainer"></div>
+      <button id="checkAnswerBtn">Check Answer</button>
+      <button id="nextBtn" class="hidden">Next Question</button>
+    </div>
+
+    <div id="results" class="section hidden">
+      <h2>Quiz Results</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
