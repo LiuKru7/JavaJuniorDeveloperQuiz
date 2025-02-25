@@ -3,7 +3,7 @@ const allQuizQuestions = [
     question: "What does JVM stand for?",
     options: [
       "Java Visual Machine",
-      "Java Virtual Method", 
+      "Java Virtual Method",
       "Java Virtual Machine",
       "Java Variable Machine"
     ],
@@ -14,7 +14,7 @@ const allQuizQuestions = [
     options: [
       "int",
       "boolean",
-      "char", 
+      "char",
       "String"
     ],
     correctAnswer: 3
@@ -401,5 +401,5 @@ const allQuizQuestions = [
   }
 ];
 
-// The quiz.js will handle selecting 20 random questions from this pool
+// The quiz.js will handle selecting 10 random questions from this pool
 const quizQuestions = allQuizQuestions;

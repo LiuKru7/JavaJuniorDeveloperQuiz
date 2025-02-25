@@ -131,7 +131,7 @@ button:hover {
   border: 1px solid #f5c6cb;
 }
 
-#checkAnswerBtn, #nextBtn {
+#checkAnswerBtn, #nextBtn, #restartBtn {
   margin-top: 20px;
 }
 
@@ -141,4 +141,81 @@ button:hover {
 
 #nextBtn:hover {
   background-color: #219a52;
+}
+
+#restartBtn {
+  background-color: #f39c12;
+}
+
+#restartBtn:hover {
+  background-color: #d35400;
+}
+
+#timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#timer.warning {
+  color: #e74c3c;
+  animation: pulse 1s infinite;
+}
+
+.warning-message {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #ffeeba;
+}
+
+.topic-selection {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.topic-selection h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topic-option {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.topic-option:hover {
+  background-color: #eef4fa;
+}
+
+.topic-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }

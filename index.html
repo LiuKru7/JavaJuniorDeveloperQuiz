@@ -2,35 +2,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Java Junior Developer Quiz</title>
+  <title>Junior Developer Quiz</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Java Junior Developer Quiz</h1>
-      <p>Test your Java knowledge with 10 random questions!</p>
-    </header>
+<div class="container">
+  <header>
+    <h1>Junior Developer Quiz</h1>
+    <p>Test your knowledge with 10 random questions!</p>
+  </header>
 
-    <div id="intro" class="section">
-      <input type="text" id="nameInput" placeholder="Enter your name" required>
-      <button id="startBtn">Start Quiz</button>
+  <div id="intro" class="section">
+    <p class="warning-message">⚠️ Don't leave this window during the quiz or the question will be marked as time expired!</p>
+    <input type="text" id="nameInput" placeholder="Enter your name" required>
+
+    <div class="topic-selection">
+      <h3>Select Quiz Topic:</h3>
+      <div class="topics">
+        <label class="topic-option">
+          <input type="radio" name="topic" value="java" checked>
+          Java Programming
+        </label>
+        <label class="topic-option">
+          <input type="radio" name="topic" value="html">
+          HTML & CSS
+        </label>
+      </div>
     </div>
 
-    <div id="quiz" class="section hidden">
-      <div id="progress">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">10</span></div>
-      <div id="questionContainer"></div>
-      <button id="checkAnswerBtn">Check Answer</button>
-      <button id="nextBtn" class="hidden">Next Question</button>
-    </div>
-
-    <div id="results" class="section hidden">
-      <h2>Quiz Results</h2>
-      <p id="score"></p>
-    </div>
+    <button id="startBtn">Start Quiz</button>
   </div>
 
-  <script src="questions.js"></script>
-  <script src="quiz.js"></script>
+  <div id="quiz" class="section hidden">
+    <div id="progress">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">10</span></div>
+    <div id="timer">45</div>
+    <div id="questionContainer"></div>
+    <button id="checkAnswerBtn">Check Answer</button>
+    <button id="nextBtn" class="hidden">Next Question</button>
+  </div>
+
+  <div id="results" class="section hidden">
+    <h2>Quiz Results</h2>
+    <p id="score"></p>
+    <button id="restartBtn">Restart Quiz</button>
+  </div>
+</div>
+
+<script src="questions.js"></script>
+<script src="html-questions.js"></script>
+<script src="quiz.js"></script>
 </body>
 </html>
